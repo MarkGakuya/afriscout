@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { v4 as uuid } from 'uuid';
-import { saveDatapointOffline, savePhotoOffline, getCachedGuidance } from '../lib/db';
-import { getGuidance, cacheGuidance, startSession, endSession } from '../lib/api';
+import { saveDatapointOffline, savePhotoOffline, getCachedGuidance, cacheGuidance } from '../lib/db';
+import { getGuidance, startSession, endSession } from '../lib/api';
 
 const MARKETS = ['Kongowea', 'Gikomba', 'Wakulima', 'City Market', 'Marikiti', 'Kibuye', 'Naivas Mombasa', 'China Square', 'Eastleigh', 'Quickmart', 'Carrefour', 'Other'];
 const SECTORS = ['Agriculture', 'Retail', 'Electronics', 'Healthcare', 'Transport', 'Construction', 'Food & Beverage', 'Other'];
